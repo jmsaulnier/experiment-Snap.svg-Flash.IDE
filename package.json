@@ -1,0 +1,68 @@
+{
+  "name": "budo-gulp-starter",
+  "version": "1.0.0",
+  "description": "a starter kit with Budo, LESS and Gulp",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "browser": {
+    "TweenMax" : "./node_modules/gsap/src/uncompressed/TweenMax.js",
+    "TimelineMax" : "./node_modules/gsap/src/uncompressed/TimelineMax.js",
+    "snapplugin" : "./src/vendor/SnapPlugin.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {},
+  "dependencies": {
+    "domready": "^1.0.7",
+    "gsap": "^1.16.1",
+    "snapsvg": "^0.3.0"
+  },
+  "devDependencies": {
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "budo": "git://github.com/mattdesl/budo#feature/gulp",
+    "errorify": "^0.2.0",
+    "garnish": "^2.1.1",
+    "gulp": "^3.8.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^1.1.0",
+    "minimist": "^1.1.1",
+    "node-reset-scss": "^1.0.1",
+    "once-file-changes": "^1.0.0",
+    "opn": "^1.0.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^2.6.1"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "open": "gulp watch -o",
+    "start": "gulp watch",
+    "build": "gulp bundle --production"
+  },
+  "keywords": [
+    "budo",
+    "html",
+    "css",
+    "sass",
+    "live",
+    "reload"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/budo-gulp-starter.git"
+  },
+  "homepage": "https://github.com/mattdesl/budo-gulp-starter",
+  "bugs": {
+    "url": "https://github.com/mattdesl/budo-gulp-starter/issues"
+  }
+}
