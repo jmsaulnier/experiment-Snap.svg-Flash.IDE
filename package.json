@@ -10,9 +10,8 @@
     "url": "https://github.com/mattdesl"
   },
   "browser": {
-    "TweenMax" : "./node_modules/gsap/src/uncompressed/TweenMax.js",
-    "TimelineMax" : "./node_modules/gsap/src/uncompressed/TimelineMax.js",
-    "snapplugin" : "./src/vendor/SnapPlugin.js"
+    "TweenMax": "./node_modules/gsap/src/uncompressed/TweenMax.js",
+    "TimelineMax": "./node_modules/gsap/src/uncompressed/TimelineMax.js"
   },
   "browserify": {
     "transform": [
@@ -21,6 +20,7 @@
   },
   "browserify-shim": {},
   "dependencies": {
+    "browserify-shim": "^3.8.3",
     "domready": "^1.0.7",
     "gsap": "^1.16.1",
     "snapsvg": "^0.3.0"
