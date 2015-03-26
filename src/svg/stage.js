@@ -1,6 +1,6 @@
 'use strict';
 
-var TweenMax = require('TweenMax');
+var TimelineMax = require('TimelineMax');
 
 var Utils = require('./utils');
 	

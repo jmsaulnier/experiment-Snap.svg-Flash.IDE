@@ -11,7 +11,7 @@ var Component = function (data, w, h) {
 
 	instance.resourceManager = new ResourceManager(data);
 
-	instance.s = new Snap(w, h);
+	instance.s = new Snap('#animation');
 	create(instance.s);
 
 	timeline = instance.movieclip.getTimeline();
@@ -38,6 +38,10 @@ var Component = function (data, w, h) {
 		mainTimeline = instance.resourceManager.m_data.DOMDocument.Timeline[maintimelineIndex];
 
 		instance.movieclip = new MovieClip(instance.s, mainTimeline, instance.resourceManager);
+	}
+
+	function resize(width, height) {
+
 	}
 };
 
